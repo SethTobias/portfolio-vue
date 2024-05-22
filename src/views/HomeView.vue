@@ -81,7 +81,7 @@ export default {
 <style>
 #landing {
   background-image: url("https://sethtobias.github.io/imgGallery/Projects/Portfolio/LC-Headshot2.jpg");
-  width: 75vw;
-  height: 200px;
+  /* width: 75vw; */
+  /* height: 200px; */
 }
 </style>
