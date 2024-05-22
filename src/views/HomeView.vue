@@ -1,13 +1,75 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <main>
+ <section id="landing">
+  <a name="top"></a>
+  <a name="home"></a>
+  <div>
+    <h1>
+
+
+Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </h1>
+
   </div>
+ </section>
+
+    <section id="about">
+      <a name="about"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="projects">
+      <a name="projects"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="experience">
+      <a name="expertise"></a>
+      <a name="experience"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="education">
+      <a name="education"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="r_resources">
+      <a name="resources"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="skills">
+      <a name="credentials"></a>
+      <a name="skills"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="certifications">
+      <a name="certifications"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="references">
+      <a name="references"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+
+    <section id="contact">
+      <a name="contact"></a>
+      Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO Hello HELLO HELLO 
+    </section>
+    
+    <section id="footer">
+
+    </section>
+   
+  </main>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '@/components/GitModal.vue'
 
 export default {
   name: 'HomeView',
@@ -16,3 +78,10 @@ export default {
   }
 }
 </script>
+<style>
+#landing {
+  background-image: url("https://sethtobias.github.io/imgGallery/Projects/Portfolio/LC-Headshot2.jpg");
+  width: 75vw;
+  height: 200px;
+}
+</style>

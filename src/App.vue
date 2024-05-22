@@ -1,7 +1,43 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+<div class="logo">
+
+    <a href="/">
+      <img src="" alt="">
+      hey
+    </a>
+</div>
+<div class="menu">
+
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+
+    <a href="#expertise">
+    Expertise <i></i>
+    <div class="dd_1">
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#r_resources">Resources</a>
+    </div>
+    </a>
+
+    <a href="#credentials">
+    Credentials <i></i>
+    <div class="dd_2">
+      <a href="#skills">My Skills</a>
+      <a href="#certifications">Certifications</a>
+    </div>
+    </a>
+
+    <a href="#references">References</a>
+    <a href="#contact">Contact</a>
+</div>
+<div class="extra">
+  <i></i>
+  <i></i>
+  <i></i>
+</div>
   </nav>
   <router-view/>
 </template>
@@ -24,7 +60,7 @@ nav a {
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
+/* nav a.a-exact-active {
   color: #42b983;
-}
+} */
 </style>
