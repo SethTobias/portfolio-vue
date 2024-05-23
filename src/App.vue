@@ -1,7 +1,4 @@
 <template>
-  <div id="site">
-
-
   <nav>
 <div class="logo">
 
@@ -46,14 +43,21 @@
 
   <router-view/>
   </div>
-</div>
 </template>
 
 <style>
-#site {
+/* html {
+  height: 0;
+} */
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
   display: grid;
-  grid-template-areas: "nav info" / 25vw 75vw;
-  column-gap: 10vw;
+  grid: "nav tent" / 1fr 3fr;
 }
 
 nav{
@@ -63,26 +67,16 @@ nav{
   top:0;
   bottom: 0;
   left: 0;
-  z-index: -5;
+  width: 25%;
 }
 
 #content {
-  grid-area: info;
+  grid-area: tent;
   background-color: blue;
-  width: 70vw;
+  margin: 0;
+  padding: 0;
 }
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  /* padding: 30px; */
-}
 
 nav a {
   font-weight: bold;
