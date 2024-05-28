@@ -3,8 +3,7 @@
 <div class="logo">
 
     <a href="/">
-      <img src="" alt="">
-      hey
+      <img class="logo img" src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png" alt="">
     </a>
 </div>
 <div class="menu">
@@ -51,13 +50,13 @@
 } */
 
 #app {
+  text-align: left;
+  display: grid;
+  grid: "nav tent" / 1fr 3fr;
+  color: #2c3e50;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  display: grid;
-  grid: "nav tent" / 1fr 3fr;
 }
 
 nav{
@@ -68,6 +67,7 @@ nav{
   bottom: 0;
   left: 0;
   width: 25%;
+
 }
 
 #content {
@@ -81,6 +81,33 @@ nav{
 nav a {
   font-weight: bold;
   color: #2c3e50;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.logo.img {
+  height: auto;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 50%;
+}
+
+.menu a {
+
 }
 
 /* nav a.a-exact-active {

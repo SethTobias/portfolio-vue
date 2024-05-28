@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'gitModal',
+  name: 'Modal',
   props: {
     msg: String
   }
