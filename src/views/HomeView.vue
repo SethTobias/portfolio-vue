@@ -1,4 +1,4 @@
-  <template>
+<template>
   <main>
     <section id="landing">
       <a name="top"></a>
@@ -120,7 +120,10 @@
             <div></div>
           </div>
           <div class="time-img">
-            <img src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png" alt="" />
+            <img
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -130,9 +133,8 @@
       <a name="education"></a>
       <div class="container education">
         <div class="heading">
-
-        <h2>Education</h2>
-        <div class="line"></div>
+          <h2>Education</h2>
+          <div class="line"></div>
         </div>
         <div class="item one">
           <div class="time-text">
@@ -151,7 +153,10 @@
             <div></div>
           </div>
           <div class="time-img">
-            <img src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png" alt="" />
+            <img
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              alt=""
+            />
           </div>
         </div>
 
@@ -172,18 +177,50 @@
             <div></div>
           </div>
           <div class="time-img">
-            <img src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png" alt="" />
+            <img
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              alt=""
+            />
           </div>
         </div>
-
       </div>
     </section>
 
     <section id="r_resources">
       <a name="resources"></a>
-      <div class="container">
-        <h2>Related Resources</h2>
-        <div class="line"></div>
+      <div class="container resources">
+        <div class="heading">
+          <h2>Related Resources</h2>
+          <div class="line"></div>
+        </div>
+        <div class="downloads">
+          <div class="ditem 1">
+            <div class="containinfo">
+              <h3 class="main info">Fullstack Web Development Certificate</h3>
+              <p class="sub info">
+                Certificate of completion of 6 month long Fullstack web dev
+                bootcamp.
+              </p>
+            </div>
+            <div class="divider"></div>
+            <div class="download">
+              <a href="" download class="btn">Download</a>
+            </div>
+          </div>
+          <div class="ditem 2">
+            <div class="info">
+              <h3 class="main info">Fullstack Web Development Certificate</h3>
+              <p class="sub info">
+                Certificate of completion of 6 month long Fullstack web dev
+                bootcamp.
+              </p>
+            </div>
+            <div class="divider"></div>
+            <div class="download">
+              <a href="" download class="btn">Download</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -191,32 +228,335 @@
       <a name="credentials"></a>
       <a name="skills"></a>
       <div class="container">
-        <h2>My Skills</h2>
-        <div class="line"></div>
+        <div class="heading">
+          <h2>My Skills</h2>
+          <div class="line"></div>
+        </div>
+        <div class="skills">
+          <div class="skill start">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill start">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill start">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">01</p>
+            <h3 class="shead">HTML</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="certifications">
       <a name="certifications"></a>
-      <div class="container">
-        <h2>Certifications</h2>
-        <div class="line"></div>
+      <div class="container certifications">
+        <div class="heading">
+          <h2>Certifications</h2>
+          <div class="line"></div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/SCRUM.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>Scrum</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <a href="" class="btn"> Learn More </a>
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/SCRUM.png"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>Scrum</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <a href="" class="btn"> Learn More </a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="references">
       <a name="references"></a>
-      <div class="container">
-        <h2>References</h2>
-        <div class="line"></div>
+      <div class="container references">
+        <div class="heading">
+          <h2>References</h2>
+          <div class="line"></div>
+        </div>
+        <div class="nav-container">
+      <div class="carousel-item-indicator previous" @click="nextItem(-1)">
+        <i
+          class="fa-solid fa-circle-chevron-left fa-2xl"
+          style="color: var(--background)"
+        ></i>
+      </div>
+      <div class="link-items-testimonial" id="one">
+          <div class="card1 testimonial-card">
+            <div class="card1 container-grid">
+              <div class="card1 img-container">
+                <img src="https://i.ibb.co/5Bhw7Nw/Ty-Headshot.jpg" alt="" />
+              </div>
+              <div class="card1 description">
+                <div class="card1 description-collapsed">
+                  <div class="card1 description-collapsed-content">
+                    <p>Tyheisha Johnson</p>
+                  </div>
+                  <div class="card1 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
+                </div>
+                <div class="card1 description-expanded">
+                  <p>
+                    Seth is a charismatic and generous person, he connects with
+                    everyone in the room. He's analytical and provides help
+                    whenever he can. He's determined to achieve the best out of
+                    everyday and motivates those around him as well.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="link-items-testimonial" id="two">
+          <div class="card2 testimonial-card">
+            <div class="card2 container-grid">
+              <div class="card2 img-container">
+                <img src="https://i.ibb.co/KKWZB9V/veronique.jpg" alt="" />
+              </div>
+              <div class="card2 description">
+                <div class="card2 description-collapsed">
+                  <div class="card2 description-collapsed-content">
+                    <p>Veronique Nappie
+</p>
+                  </div>
+                  <div class="card2 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
+                </div>
+                <div class="card2 description-expanded">
+                  <p>
+                    Seth Tobias is both kind and compassionate. The atmosphere
+                    that he brings into one's presence is calming and
+                    comforting. He has the ability to brighten anyone's day.
+                    Seth's work ethic and determination is admirable and
+                    inspirational.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="link-items-testimonial" id="three">      
+          <div class="card3 testimonial-card">
+            <div class="card3 container-grid">
+              <div class="card3 img-container">
+                <img
+                  src="https://i.ibb.co/k3bpgZH/Zubaidah-Headshot.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card3 description">
+                <div class="card3 description-collapsed">
+                  <div class="card3 description-collapsed-content">
+                    <p>Zubaidah Isaacs</p>
+                  </div>
+                  <div class="card3 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
+                </div>
+                <div class="card3 description-expanded">
+                  <p>
+                    Seth is a very friendly person and is very committed to his
+                    work. He is very hardworking and has good social skills and
+                    is good at problem-solving and very enthusiastic too.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="link-items-testimonial" id="four">
+          <div class="card4 testimonial-card">
+            <div class="card4 container-grid">
+              <div class="card4 img-container">
+                <img
+                  src="https://i.ibb.co/gJCqRH6/Ntokozo-Headshot.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card4 description">
+                <div class="card4 description-collapsed">
+                  <div class="card4 description-collapsed-content">
+                    <p>Ntokozo Sithebe</p>
+                  </div>
+                  <div class="card4 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
+                </div>
+                <div class="card4 description-expanded">
+                  <p>
+                    Seth is a very enthusiastic about life. Everything he talks
+                    about has life or character. He is like a sunflower, always
+                    blossoming.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="link-items-testimonial" id="five">
+          <div class="card5 testimonial-card">
+            <div class="card5 container-grid">
+              <div class="card5 img-container">
+                <img
+                  src="https://i.ibb.co/Ny7VbgH/Naeema-Headshot.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div class="card5 description">
+                <div class="card5 description-collapsed">
+                  <div class="card5 description-collapsed-content">
+                    <p>Naeema Omar</p>
+                  </div>
+                  <div class="card5 description-collapsed-content">
+                    <p>Colleague</p>
+                  </div>
+                </div>
+                <div class="card5 description-expanded">
+                  <p>
+                    Seth Tobias always brings great energy to the team. He has
+                    solid attention to detail which is why he is often
+                    designated as our go-to debugger. He is self-driven and
+                    always go above and beyond with any task he's given.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div class="carousel-item-indicator next" @click="nextItem(1)">
+        <i
+          class="fa-solid fa-circle-chevron-right fa-2xl"
+          style="color: var(--background)"
+        ></i>
+      </div>
+    </div>
+        <!-- <div class="ref grid">
+          <i class="fa-solid fa-caret-left"></i>
+          <div class="ref content 1">
+            <div class="ref img">
+              <img
+                src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Ty_Headshot.jpg"
+                alt=""
+                class="reference img"
+              />
+            </div>
+
+            <div class="ref info">
+              <p>
+                Seth is a charismatic and generous person, he connects with
+                everyone in the room. He's analytical and provides help whenever
+                he can. He's determined to achieve the best out of everyday and
+                motivates those around him as well.
+              </p>
+              <p>
+                <span> Tyhiesha Johnson </span>: Intern at LC Studio |
+                <a href="">Linkedin</a>
+              </p>
+            </div>
+          </div>
+          <i class="fa-solid fa-caret-right"></i>
+        </div> -->
       </div>
     </section>
 
     <section id="contact">
       <a name="contact"></a>
-      <div class="container">
+      <div class="container contact">
+        <div class="heading">
+
         <h2>Contact</h2>
         <div class="line"></div>
+        </div>
+        <div class="form flex">
+          <div class="details">
+            <p>Table View, Cape Town, South Africa</p>
+            <a href="">065 887 9439</a>
+            <a href="">seth.adams1107@gmail.com</a>
+            <a href="">linkedin.com/in/seth-tobias</a>
+            <a href="">github.com/SethTobias</a>
+            <p>Avaliable @ 08:00 am - 5:30 pm, Monday to Sunday.</p>
+          </div>
+        <form action="">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+          <input type="text">
+          <button type="submit">Contact Me</button>
+        </form>
+        </div>
       </div>
     </section>
 
@@ -232,6 +572,36 @@ export default {
   name: "HomeView",
   components: {
     Modal,
+  },
+  data() {
+    return {
+      carouselIndex: 1,
+    };
+  },
+  methods: {
+    carouselSetItem() {
+      return this.carouselIndex;
+    },
+    displayItem(n) {
+      let c = 0;
+      let carouselItems = document.querySelectorAll(".link-items-testimonial");
+      if (n > carouselItems.length) {
+        this.carouselIndex = 1;
+      }
+      if (n < 1) {
+        this.carouselIndex = carouselItems.length;
+      }
+      for (c = 0; c < carouselItems.length; c++) {
+        carouselItems[c].style.display = "none";
+      }
+      carouselItems[this.carouselIndex - 1].style.display = "flex";
+    },
+    currentItem(n) {
+      this.displayItem(this.carouselIndex);
+    },
+    nextItem(n) {
+      this.displayItem((this.carouselIndex += n));
+    },
   },
 };
 </script>
@@ -272,6 +642,14 @@ section {
   height: auto;
 }
 
+.btn {
+  border: 2px blue solid;
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 5px;
+  width: fit-content;
+}
+
 #landing {
   display: grid;
   grid: 1fr / 1fr;
@@ -308,7 +686,7 @@ section {
   text-align: left;
   background-color: blueviolet;
 }
-.container.about .heading h2{
+.container.about .heading h2 {
   text-align: left;
 }
 .container.about p {
@@ -391,7 +769,7 @@ section {
 
 .item {
   display: grid;
-  grid: 'txt line img' 300px / 1fr 100px 1fr;
+  grid: "txt line img" 300px / 1fr 100px 1fr;
   padding: 0 25px;
   margin-top: 50px;
 }
@@ -409,7 +787,7 @@ section {
   grid: 20px 50px 230px / 100%;
 }
 
-.time-line p{
+.time-line p {
   text-align: center;
   margin: 0;
   z-index: 1;
@@ -426,7 +804,7 @@ section {
   z-index: 1;
 }
 
-.time-line div{
+.time-line div {
   grid-area: 1/1/4/2;
   background-color: darkblue;
   width: 10px;
@@ -451,7 +829,6 @@ section {
 }
 
 #education {
-
 }
 
 .container.education {
@@ -463,12 +840,12 @@ section {
 
 .item.two {
   display: grid;
-  grid: 'img line txt' 300px / 1fr 100px 1fr;
+  grid: "img line txt" 300px / 1fr 100px 1fr;
   padding: 0 25px;
   margin-top: 0px;
 }
 
-.item.two .time-line div{
+.item.two .time-line div {
   border-radius: 0;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -476,6 +853,376 @@ section {
 
 .item.two .time-text {
   text-align: right;
+}
+
+#r_resources {
+}
+
+.downloads {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 0 auto;
+  /* justify-content: center;
+  align-content: center; */
+}
+
+.ditem {
+  display: grid;
+  grid: "info divider btn" 1fr/ 4fr 0.25fr 1fr;
+  /* margin: 0 auto; */
+}
+
+.divider {
+  border-right: 1px grey solid;
+  height: 65%;
+  margin: auto;
+}
+
+.download {
+  display: flex;
+  /* margin: auto 0; */
+  justify-content: center;
+  align-items: center;
+}
+
+#skills {
+}
+
+.skills {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.skill {
+  width: 25vw;
+  /* height: 38vh; */
+  display: grid;
+  grid: 25px 25px 25vh / repeat(4, 1fr);
+}
+
+.sback {
+  grid-area: 1/1/3/3;
+  font-size: 2.5rem;
+  align-self: center;
+  /* z-index: -1; */
+}
+
+.shead {
+  grid-area: 2/2/3/3;
+  z-index: 1;
+}
+
+.sbody {
+  grid-area: 3/2/4/5;
+}
+
+.skill.start {
+  align-self: flex-start;
+}
+
+.skill.end {
+  align-self: flex-end;
+}
+
+#certifications {
+}
+
+.certificate.grid {
+  display: grid;
+  grid: 1fr / 1fr 4fr;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+.certificate.img {
+  width: 200px;
+  height: auto;
+}
+
+.certificate.img.start {
+  grid-area: 1/1/1/2;
+}
+
+.certificate.img.end {
+  grid-area: 1/5/1/6;
+}
+
+.certificate.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificate.info.start {
+  grid-area: 1/2/1/6;
+}
+
+.certificate.info.end {
+  grid-area: 1/1/1/5;
+}
+
+#references {
+}
+
+.carousel-main-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+}
+.carousel-item {
+  display: none;
+}
+
+.testimonial-container {
+  margin: 0 auto;
+  width: 1250px;
+  margin-bottom: 25px;
+}
+
+.carousel-item-indicators {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  place-content: center space-evenly;
+  user-select: none;
+}
+.carousel-item-indicator.previous,
+.carousel-item-indicator.next {
+  cursor: pointer;
+  z-index: 1;
+  align-content: center;
+}
+.carousel-item-index {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-container {
+  display: flex;
+  place-content: center;
+}
+
+:has(.link-items-testimonial) :where(#two,#three,#four,#five) {
+  display: none;
+}
+
+.nav-link {
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  width: 1250px;
+  min-width: 250px;
+}
+
+.testimonial-card {
+  background-color: var(--secondary);
+  height: fit-content;
+  width: fit-content;
+  border: 7.5px groove var(--text);
+  margin: 10px auto;
+  justify-content: center;
+}
+.testimonial-card:hover {
+  border-color: var(--secondary);
+}
+.link-items-testimonial.one .testimonial-items1,
+.link-items-testimonial.two .testimonial-items2 {
+  /* grid-area: 1/1/2/2; */
+  width: 1200px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.testimonial-items1 .testimonial-card {
+  background-color: var(--secondary);
+}
+
+.container-grid {
+  height: 400px;
+  width: 300px;
+  display: grid;
+  grid: "img" 75% "description" 25% / 1fr;
+}
+
+/* .testimonial-items1 .container-grid:hover,
+.testimonial-items2 .container-grid:hover {
+  animation: cardExpand 1s forwards;
+} */
+
+@keyframes cardExpand {
+  0% {
+    grid: "img" 75% "description" 25% / 1fr;
+  }
+
+  100% {
+    grid: "img" 0% "description" 100% / 1fr;
+  }
+}
+
+.img-container {
+  grid-area: img;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonial-items1 .description,
+.testimonial-items2 .description {
+  grid-area: description;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.description-collapsed-content {
+  text-align: center;
+}
+
+.description-expanded {
+  text-align: center;
+  /* padding: 0 25px; */
+  font-size: 1rem;
+}
+.testimonial-items1 .description-expanded,
+.testimonial-items2 .description-expanded {
+  overflow: hidden;
+}
+
+.testimonial-items2 {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.testimonial-items2 .testimonial-card {
+  background-color: var(--primary);
+}
+
+@media screen and (max-width: 300px) {
+  .carousel-main-container {
+    width: 300px;
+  }
+  .carousel-item {
+    display: none;
+  }
+  .carousel-item-indicators.next,
+  .carousel-item-indicators.previous {
+    width: 25px;
+  }
+  .carousel-item-indicator.next i,
+  .carousel-item-indicator.previous i {
+    font-size: 25px;
+  }
+
+  .link-items-testimonial.two {
+    display: none;
+  }
+  .nav-link {
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  .testimonial-container {
+    margin: 0 auto;
+    width: 250px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-card {
+    background-color: var(--secondary);
+    height: fit-content;
+    width: fit-content;
+    margin: 10px auto;
+  }
+  .link-items-testimonial.one .testimonial-items1,
+  .link-items-testimonial.two .testimonial-items2 {
+    /* grid-area: 1/1/2/2; */
+    width: 250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  .container-grid {
+    height: 250px;
+    width: 200px;
+  }
+
+  .testimonial-items1 .description,
+  .testimonial-items2 .description {
+    font-size: 0.75rem;
+  }
+
+  .description-expanded {
+    font-size: 0.7rem;
+  }
+
+  .testimonial-items2 {
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 10px auto;
+  }
+}
+
+/* .ref.grid {
+  display: grid;
+  grid: 1fr /0.2fr 5fr 0.2fr;
+  align-items: center;
+} */
+
+/* .ref.content {
+  display: grid;
+  grid: 1fr / 1fr 1fr;
+} */
+
+
+
+/* .ref.img {
+ 
+} */
+
+/* .reference.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* .fa-solid.fa-caret-right {
+  justify-self: end;
+} */
+
+#contact {
+
+}
+
+.form.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
 }
 
 #footer {
