@@ -660,6 +660,10 @@ section {
   width: fit-content;
 }
 
+.btn.end {
+  align-self: end;
+}
+
 #landing {
   display: grid;
   grid: 1fr / 1fr;
@@ -690,18 +694,20 @@ section {
 }
 
 .content.about {
-  display: grid;
-  grid: 1fr / 1.2fr 1fr;
-  column-gap: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content.about p {
   margin: 0;
+  max-height: 400px;
+  max-width: 400px;
 }
 
 .container.about .about-img {
-  max-width: 300px;
-  max-height: 400px;
+  max-width: 350px;
+  max-height: 450px;
 }
 
 .img.about {
@@ -897,7 +903,7 @@ li {
   /* margin: 0 auto; */
 }
 
-.divider {
+.bivider {
   border-right: 1px grey solid;
   height: 65%;
   margin: auto;
@@ -1033,13 +1039,15 @@ li {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   width: 65vw;
+  background-color: grey;
+  text-align: center;
 }
 
 .link-items-testimonial {
-  width: 50vw;
+  width: 60vw;
 }
 
 :has(.link-items-testimonial) :where(#two, #three, #four, #five) {
@@ -1081,10 +1089,11 @@ li {
 }
 
 .container-grid {
-  height: 400px;
-  width: 300px;
-  display: grid;
-  grid: "img" 75% "description" 25% / 1fr;
+  /* height: 320px; */
+  /* width: 350px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* .testimonial-items1 .container-grid:hover,
@@ -1092,7 +1101,7 @@ li {
   animation: cardExpand 1s forwards;
 } */
 
-@keyframes cardExpand {
+/* @keyframes cardExpand {
   0% {
     grid: "img" 75% "description" 25% / 1fr;
   }
@@ -1100,15 +1109,15 @@ li {
   100% {
     grid: "img" 0% "description" 100% / 1fr;
   }
-}
+} */
 
 .img-container {
   grid-area: img;
 }
 
 .img-container img {
-  width: 100%;
-  height: 100%;
+  width: 350px;
+  height: auto;
 }
 
 .testimonial-items1 .description,
@@ -1122,21 +1131,21 @@ li {
   font-size: 1.1rem;
 }
 
-.description-collapsed-content {
+/* .description-collapsed-content {
   text-align: center;
-}
+} */
 
-.description-expanded {
+/* .description-expanded {
   text-align: center;
-  /* padding: 0 25px; */
+  padding: 0 25px;
   font-size: 1rem;
 }
 .testimonial-items1 .description-expanded,
 .testimonial-items2 .description-expanded {
   overflow: hidden;
-}
+} */
 
-.testimonial-items2 {
+/* .testimonial-items2 {
   grid-area: 1/1/2/2;
   display: flex;
   flex-flow: row wrap;
@@ -1145,7 +1154,7 @@ li {
 
 .testimonial-items2 .testimonial-card {
   background-color: var(--primary);
-}
+} */
 
 @media screen and (max-width: 300px) {
   .carousel-main-container {
