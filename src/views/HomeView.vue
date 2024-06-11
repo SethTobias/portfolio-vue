@@ -1,8 +1,7 @@
 <template>
   <main>
+    <a name="home"></a>
     <section id="landing">
-      <a name="top"></a>
-      <a name="home"></a>
       <img
         class="landing"
         src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/landing.jpg"
@@ -22,76 +21,71 @@
           <h2>About</h2>
           <div class="line"></div>
         </div>
-
-        <p>
-          I am a 19-year-old with a passion for coding and strong communication
-          skills in English and Afrikaans. After completing a six-month program
-          at Life Choices Academy, my dedication to coding intensified, leading
-          me to pursue an internship at LC Studios within the ICT industry. I am
-          driven by my love for Hockey, where I have learnt resilience,
-          teamwork, and the joy of sports. Additionally, I indulge in hobbies
-          like watching movies, reading Manga and Manhua, creating meaningful
-          music playlists and gaming, which sparked my interest in coding and
-          web development.
-        </p>
-        <div class="about-img">
-          <img
-            class="about img"
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/LC-Headshot2.jpg"
-            alt=""
-          />
+        <div class="content about">
+          <p>
+            I am a 19-year-old with a passion for coding and strong
+            communication skills in English and Afrikaans. After completing a
+            six-month program at Life Choices Academy, my dedication to coding
+            intensified, leading me to pursue an internship at LC Studios within
+            the ICT industry. I am driven by my love for Hockey, where I have
+            learnt resilience, teamwork, and the joy of sports. Additionally, I
+            indulge in hobbies like watching movies, reading Manga and Manhua,
+            creating meaningful music playlists and gaming, which sparked my
+            interest in coding and web development.
+          </p>
+          <div class="about-img">
+            <img
+              class="about img"
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/LC-Headshot2.jpg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projects">
       <a name="projects"></a>
+      <CertModal
+        :isVisible="isModalVisible"
+        :title="modalTitle"
+        :msg="modalMsg"
+        @close="closeModal"
+      ></CertModal>
       <div class="container projects">
         <div class="heading">
           <h2>Projects</h2>
           <div class="line"></div>
         </div>
-        <div class="project one">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/time-converter.png"
-            alt=""
-          />
+        <div class="projects">
+          <div class="project one">
+            <img
+              @click="
+                openModal('Project 1', 'This is the description for project 1.')
+              "
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/time-converter.png"
+              alt=""
+            />
+          </div>
+          <div class="project two">
+            <img
+              @click="
+                openModal('Project 2', 'This is the description for project 2.')
+              "
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/momentum-motors.png"
+              alt=""
+            />
+          </div>
+          <div class="project three">
+            <img
+              @click="
+                openModal('Project 3', 'This is the description for project 3.')
+              "
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/literary-connect.png"
+              alt=""
+            />
+          </div>
         </div>
-
-        <div class="project two">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/momentum-motors.png"
-            alt=""
-          />
-        </div>
-
-        <div class="project three">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/literary-connect.png"
-            alt=""
-          />
-        </div>
-
-        <!-- <div class="project four">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/time-converter.png"
-            alt=""
-          />
-        </div>
-
-        <div class="project five">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/momentum-motors.png"
-            alt=""
-          />
-        </div>
-
-        <div class="project six">
-          <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/literary-connect.png"
-            alt=""
-          />
-        </div> -->
       </div>
     </section>
 
@@ -116,7 +110,7 @@
           </div>
           <div class="time-line">
             <p>DD/MM/YYYY</p>
-            <i>c</i>
+            <i class="fa-solid fa-code-fork"></i>
             <div></div>
           </div>
           <div class="time-img">
@@ -149,7 +143,7 @@
           </div>
           <div class="time-line">
             <p>DD/MM/YYYY</p>
-            <i>c</i>
+            <i class="fa-solid fa-laptop-code"></i>
             <div></div>
           </div>
           <div class="time-img">
@@ -173,7 +167,7 @@
           </div>
           <div class="time-line">
             <p>DD/MM/YYYY</p>
-            <i>c</i>
+            <i class="fa-solid fa-book-bookmark"></i>
             <div></div>
           </div>
           <div class="time-img">
@@ -227,7 +221,7 @@
     <section id="skills">
       <a name="credentials"></a>
       <a name="skills"></a>
-      <div class="container">
+      <div class="container skills">
         <div class="heading">
           <h2>My Skills</h2>
           <div class="line"></div>
@@ -242,6 +236,7 @@
               with other web technologies.
             </p>
           </div>
+
           <div class="skill end">
             <p class="sback">01</p>
             <h3 class="shead">HTML</h3>
@@ -343,166 +338,164 @@
           <div class="line"></div>
         </div>
         <div class="nav-container">
-      <div class="carousel-item-indicator previous" @click="nextItem(-1)">
-        <i
-          class="fa-solid fa-circle-chevron-left fa-2xl"
-          style="color: var(--background)"
-        ></i>
-      </div>
-      <div class="link-items-testimonial" id="one">
-          <div class="card1 testimonial-card">
-            <div class="card1 container-grid">
-              <div class="card1 img-container">
-                <img src="https://i.ibb.co/5Bhw7Nw/Ty-Headshot.jpg" alt="" />
-              </div>
-              <div class="card1 description">
-                <div class="card1 description-collapsed">
-                  <div class="card1 description-collapsed-content">
-                    <p>Tyheisha Johnson</p>
-                  </div>
-                  <div class="card1 description-collapsed-content">
-                    <p>Colleague</p>
-                  </div>
+          <div class="carousel-item-indicator previous" @click="nextItem(-1)">
+            <i
+              class="fa-solid fa-circle-chevron-left fa-2xl"
+              style="color: var(--background)"
+            ></i>
+          </div>
+          <div class="link-items-testimonial" id="one">
+            <div class="card1 testimonial-card">
+              <div class="card1 container-grid">
+                <div class="card1 img-container">
+                  <img src="https://i.ibb.co/5Bhw7Nw/Ty-Headshot.jpg" alt="" />
                 </div>
-                <div class="card1 description-expanded">
-                  <p>
-                    Seth is a charismatic and generous person, he connects with
-                    everyone in the room. He's analytical and provides help
-                    whenever he can. He's determined to achieve the best out of
-                    everyday and motivates those around him as well.
-                  </p>
+                <div class="card1 description">
+                  <div class="card1 description-collapsed">
+                    <div class="card1 description-collapsed-content">
+                      <p>Tyheisha Johnson</p>
+                    </div>
+                    <div class="card1 description-collapsed-content">
+                      <p>Colleague</p>
+                    </div>
+                  </div>
+                  <div class="card1 description-expanded">
+                    <p>
+                      Seth is a charismatic and generous person, he connects
+                      with everyone in the room. He's analytical and provides
+                      help whenever he can. He's determined to achieve the best
+                      out of everyday and motivates those around him as well.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-      </div>
-      <div class="link-items-testimonial" id="two">
-          <div class="card2 testimonial-card">
-            <div class="card2 container-grid">
-              <div class="card2 img-container">
-                <img src="https://i.ibb.co/KKWZB9V/veronique.jpg" alt="" />
-              </div>
-              <div class="card2 description">
-                <div class="card2 description-collapsed">
-                  <div class="card2 description-collapsed-content">
-                    <p>Veronique Nappie
-</p>
-                  </div>
-                  <div class="card2 description-collapsed-content">
-                    <p>Colleague</p>
-                  </div>
+          <div class="link-items-testimonial" id="two">
+            <div class="card2 testimonial-card">
+              <div class="card2 container-grid">
+                <div class="card2 img-container">
+                  <img src="https://i.ibb.co/KKWZB9V/veronique.jpg" alt="" />
                 </div>
-                <div class="card2 description-expanded">
-                  <p>
-                    Seth Tobias is both kind and compassionate. The atmosphere
-                    that he brings into one's presence is calming and
-                    comforting. He has the ability to brighten anyone's day.
-                    Seth's work ethic and determination is admirable and
-                    inspirational.
-                  </p>
+                <div class="card2 description">
+                  <div class="card2 description-collapsed">
+                    <div class="card2 description-collapsed-content">
+                      <p>Veronique Nappie</p>
+                    </div>
+                    <div class="card2 description-collapsed-content">
+                      <p>Colleague</p>
+                    </div>
+                  </div>
+                  <div class="card2 description-expanded">
+                    <p>
+                      Seth Tobias is both kind and compassionate. The atmosphere
+                      that he brings into one's presence is calming and
+                      comforting. He has the ability to brighten anyone's day.
+                      Seth's work ethic and determination is admirable and
+                      inspirational.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-      </div>
-      <div class="link-items-testimonial" id="three">      
-          <div class="card3 testimonial-card">
-            <div class="card3 container-grid">
-              <div class="card3 img-container">
-                <img
-                  src="https://i.ibb.co/k3bpgZH/Zubaidah-Headshot.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="card3 description">
-                <div class="card3 description-collapsed">
-                  <div class="card3 description-collapsed-content">
-                    <p>Zubaidah Isaacs</p>
-                  </div>
-                  <div class="card3 description-collapsed-content">
-                    <p>Colleague</p>
-                  </div>
+          <div class="link-items-testimonial" id="three">
+            <div class="card3 testimonial-card">
+              <div class="card3 container-grid">
+                <div class="card3 img-container">
+                  <img
+                    src="https://i.ibb.co/k3bpgZH/Zubaidah-Headshot.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="card3 description-expanded">
-                  <p>
-                    Seth is a very friendly person and is very committed to his
-                    work. He is very hardworking and has good social skills and
-                    is good at problem-solving and very enthusiastic too.
-                  </p>
+                <div class="card3 description">
+                  <div class="card3 description-collapsed">
+                    <div class="card3 description-collapsed-content">
+                      <p>Zubaidah Isaacs</p>
+                    </div>
+                    <div class="card3 description-collapsed-content">
+                      <p>Colleague</p>
+                    </div>
+                  </div>
+                  <div class="card3 description-expanded">
+                    <p>
+                      Seth is a very friendly person and is very committed to
+                      his work. He is very hardworking and has good social
+                      skills and is good at problem-solving and very
+                      enthusiastic too.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-      </div>
-      <div class="link-items-testimonial" id="four">
-          <div class="card4 testimonial-card">
-            <div class="card4 container-grid">
-              <div class="card4 img-container">
-                <img
-                  src="https://i.ibb.co/gJCqRH6/Ntokozo-Headshot.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="card4 description">
-                <div class="card4 description-collapsed">
-                  <div class="card4 description-collapsed-content">
-                    <p>Ntokozo Sithebe</p>
-                  </div>
-                  <div class="card4 description-collapsed-content">
-                    <p>Colleague</p>
-                  </div>
+          <div class="link-items-testimonial" id="four">
+            <div class="card4 testimonial-card">
+              <div class="card4 container-grid">
+                <div class="card4 img-container">
+                  <img
+                    src="https://i.ibb.co/gJCqRH6/Ntokozo-Headshot.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="card4 description-expanded">
-                  <p>
-                    Seth is a very enthusiastic about life. Everything he talks
-                    about has life or character. He is like a sunflower, always
-                    blossoming.
-                  </p>
+                <div class="card4 description">
+                  <div class="card4 description-collapsed">
+                    <div class="card4 description-collapsed-content">
+                      <p>Ntokozo Sithebe</p>
+                    </div>
+                    <div class="card4 description-collapsed-content">
+                      <p>Colleague</p>
+                    </div>
+                  </div>
+                  <div class="card4 description-expanded">
+                    <p>
+                      Seth is a very enthusiastic about life. Everything he
+                      talks about has life or character. He is like a sunflower,
+                      always blossoming.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        
-      </div>
-      <div class="link-items-testimonial" id="five">
-          <div class="card5 testimonial-card">
-            <div class="card5 container-grid">
-              <div class="card5 img-container">
-                <img
-                  src="https://i.ibb.co/Ny7VbgH/Naeema-Headshot.jpg"
-                  alt=""
-                />
-              </div>
+          <div class="link-items-testimonial" id="five">
+            <div class="card5 testimonial-card">
+              <div class="card5 container-grid">
+                <div class="card5 img-container">
+                  <img
+                    src="https://i.ibb.co/Ny7VbgH/Naeema-Headshot.jpg"
+                    alt=""
+                  />
+                </div>
 
-              <div class="card5 description">
-                <div class="card5 description-collapsed">
-                  <div class="card5 description-collapsed-content">
-                    <p>Naeema Omar</p>
+                <div class="card5 description">
+                  <div class="card5 description-collapsed">
+                    <div class="card5 description-collapsed-content">
+                      <p>Naeema Omar</p>
+                    </div>
+                    <div class="card5 description-collapsed-content">
+                      <p>Colleague</p>
+                    </div>
                   </div>
-                  <div class="card5 description-collapsed-content">
-                    <p>Colleague</p>
+                  <div class="card5 description-expanded">
+                    <p>
+                      Seth Tobias always brings great energy to the team. He has
+                      solid attention to detail which is why he is often
+                      designated as our go-to debugger. He is self-driven and
+                      always go above and beyond with any task he's given.
+                    </p>
                   </div>
-                </div>
-                <div class="card5 description-expanded">
-                  <p>
-                    Seth Tobias always brings great energy to the team. He has
-                    solid attention to detail which is why he is often
-                    designated as our go-to debugger. He is self-driven and
-                    always go above and beyond with any task he's given.
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-        
-      </div>
-      <div class="carousel-item-indicator next" @click="nextItem(1)">
-        <i
-          class="fa-solid fa-circle-chevron-right fa-2xl"
-          style="color: var(--background)"
-        ></i>
-      </div>
-    </div>
+          <div class="carousel-item-indicator next" @click="nextItem(1)">
+            <i
+              class="fa-solid fa-circle-chevron-right fa-2xl"
+              style="color: var(--background)"
+            ></i>
+          </div>
+        </div>
         <!-- <div class="ref grid">
           <i class="fa-solid fa-caret-left"></i>
           <div class="ref content 1">
@@ -536,9 +529,8 @@
       <a name="contact"></a>
       <div class="container contact">
         <div class="heading">
-
-        <h2>Contact</h2>
-        <div class="line"></div>
+          <h2>Contact</h2>
+          <div class="line"></div>
         </div>
         <div class="form flex">
           <div class="details">
@@ -549,13 +541,13 @@
             <a href="">github.com/SethTobias</a>
             <p>Avaliable @ 08:00 am - 5:30 pm, Monday to Sunday.</p>
           </div>
-        <form action="">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <input type="text">
-          <button type="submit">Contact Me</button>
-        </form>
+          <form action="">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <button type="submit">Contact Me</button>
+          </form>
         </div>
       </div>
     </section>
@@ -565,17 +557,21 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import Modal from "@/components/Modal.vue";
+import CertModal from "@/components/CertModal.vue";
+import ProjectModal from "@/components/ProjectModal.vue";
 
 export default {
   name: "HomeView",
   components: {
-    Modal,
+    CertModal,
+    ProjectModal,
   },
   data() {
     return {
       carouselIndex: 1,
+      isModalVisible: false,
+      modalTitle: "",
+      modalMsg: "",
     };
   },
   methods: {
@@ -602,6 +598,16 @@ export default {
     nextItem(n) {
       this.displayItem((this.carouselIndex += n));
     },
+    openModal(title, msg) {
+      this.modalTitle = title;
+      this.modalMsg = msg;
+      this.isModalVisible = true;
+    },
+    closeModal() {
+      this.isModalVisible = false;
+      this.modalTitle = "";
+      this.modalMsg = "";
+    },
   },
 };
 </script>
@@ -619,18 +625,22 @@ section {
   border: solid 10px black;
   border-left: 0;
   border-right: 0;
-  padding: 0 25px;
 }
 
 .container {
   background-color: brown;
-  width: 60vw;
+  width: 65vw;
   margin: 0 auto;
   padding: 25px 0;
 }
 
+.heading {
+  margin-bottom: 25px;
+}
+
 .heading h2 {
   margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -674,54 +684,60 @@ section {
 }
 
 .container.about {
-  display: grid;
-  grid:
-    "heading img" 100px
-    "content img" 300px / 2fr 1fr;
-  gap: 0 3rem;
 }
 
 .container.about .heading {
-  grid-area: heading;
-  text-align: left;
-  background-color: blueviolet;
 }
-.container.about .heading h2 {
-  text-align: left;
+
+.content.about {
+  display: grid;
+  grid: 1fr / 1.2fr 1fr;
+  column-gap: 50px;
 }
-.container.about p {
-  grid-area: content;
-  background-color: pink;
+
+.content.about p {
   margin: 0;
 }
+
 .container.about .about-img {
-  grid-area: img;
-  background-color: teal;
+  max-width: 300px;
+  max-height: 400px;
 }
 
 .img.about {
-  width: 300px;
-  height: 400px;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 #projects {
 }
 
-.container.projects {
+.project:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+.container.projects .projects {
   display: grid;
   gap: 10px;
   grid:
-    "heading heading heading" 100px
-    "pro1 pro1 pro2" 150px
-    "pro1 pro1 pro3" 150px
+    "pro1 pro1 pro2" 125px
+    "pro1 pro1 pro3" 125px
     /* "pro4 pro6 pro6" 150px 
     "pro5 pro6 pro6" 150px  */
-    / 1fr 1fr 1fr;
+    / 1fr 1fr 0.9fr;
 }
 
 .container.projects .heading {
-  grid-area: heading;
-  background-color: aqua;
 }
 
 .project {
@@ -770,8 +786,7 @@ section {
 .item {
   display: grid;
   grid: "txt line img" 300px / 1fr 100px 1fr;
-  padding: 0 25px;
-  margin-top: 50px;
+  place-items: center;
 }
 
 .time-text {
@@ -799,9 +814,15 @@ section {
   background-color: cornflowerblue;
   width: 50px;
   height: 50px;
+  font-size: 30px;
   text-align: center;
   margin: 0 auto;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black 1px solid;
+  border-radius: 100%;
 }
 
 .time-line div {
@@ -841,7 +862,6 @@ section {
 .item.two {
   display: grid;
   grid: "img line txt" 300px / 1fr 100px 1fr;
-  padding: 0 25px;
   margin-top: 0px;
 }
 
@@ -856,6 +876,10 @@ section {
 }
 
 #r_resources {
+}
+
+.container.resources {
+  background-color: gray;
 }
 
 .downloads {
@@ -892,17 +916,17 @@ section {
 .skills {
   margin: 0 auto;
   margin-top: 50px;
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   flex-direction: column;
   /* align-items: center; */
 }
 
 .skill {
-  width: 25vw;
+  /* width: 25vw; */
   /* height: 38vh; */
   display: grid;
-  grid: 25px 25px 25vh / repeat(4, 1fr);
+  grid: 2.5vh 10vh 25vh / 5vw 5vw 15vw 15vw;
 }
 
 .sback {
@@ -955,6 +979,11 @@ section {
 .certificate.info {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.certificate.info :where(h3,p) {
+  margin: 0;
 }
 
 .certificate.info.start {
@@ -969,7 +998,7 @@ section {
 }
 
 .carousel-main-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
   margin: 0 auto;
 }
@@ -979,7 +1008,7 @@ section {
 
 .testimonial-container {
   margin: 0 auto;
-  width: 1250px;
+  /* width: 1250px; */
   margin-bottom: 25px;
 }
 
@@ -1004,10 +1033,16 @@ section {
 
 .nav-container {
   display: flex;
-  place-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 65vw;
 }
 
-:has(.link-items-testimonial) :where(#two,#three,#four,#five) {
+.link-items-testimonial {
+  width: 50vw;
+}
+
+:has(.link-items-testimonial) :where(#two, #three, #four, #five) {
   display: none;
 }
 
@@ -1016,33 +1051,33 @@ section {
   display: flex;
   align-content: center;
   justify-content: space-between;
-  max-width: 1250px;
+  /* max-width: 1250px;
   width: 1250px;
-  min-width: 250px;
+  min-width: 250px; */
 }
 
 .testimonial-card {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
   height: fit-content;
   width: fit-content;
-  border: 7.5px groove var(--text);
+  /* border: 7.5px groove var(--text); */
   margin: 10px auto;
   justify-content: center;
 }
 .testimonial-card:hover {
-  border-color: var(--secondary);
+  /* border-color: var(--secondary); */
 }
 .link-items-testimonial.one .testimonial-items1,
 .link-items-testimonial.two .testimonial-items2 {
   /* grid-area: 1/1/2/2; */
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
 .testimonial-items1 .testimonial-card {
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
 }
 
 .container-grid {
@@ -1195,8 +1230,6 @@ section {
   grid: 1fr / 1fr 1fr;
 } */
 
-
-
 /* .ref.img {
  
 } */
@@ -1212,7 +1245,6 @@ section {
 } */
 
 #contact {
-
 }
 
 .form.flex {
