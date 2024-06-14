@@ -4,6 +4,10 @@
       <button class="modal-close cert" @click="close">×</button>
       <h2>{{ title }}</h2>
       <p>{{ msg }}</p>
+      <p>
+        <a :href="{ github }">HitHub</a> | 
+        <a :href="{ link }">Hosted Link</a>
+      </p>
     </div>
   </div>
 </template>
@@ -21,6 +25,14 @@ export default {
       default: ''
     },
     msg: {
+      type: String,
+      default: ''
+    },
+    github: {
+      type: String,
+      default: ''
+    },
+    link: {
       type: String,
       default: ''
     }

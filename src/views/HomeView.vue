@@ -50,6 +50,8 @@
         :isVisible="isModalVisible"
         :title="modalTitle"
         :msg="modalMsg"
+        :git="modalGit"
+        :link="modalLink"
         @close="closeModal"
       ></CertModal>
       <div class="container projects">
@@ -61,7 +63,12 @@
           <div class="project one">
             <img
               @click="
-                openModal('Project 1', 'This is the description for project 1.')
+                openModal(
+                  'Time Converter',
+                  'This was one of the very first JavaScript projects I was assigned. It was a simple time converter to go from minutes to seconds. Overtime however I improved the functionality and overall styling of the project to the current point it is at now. It taught me the basics of DOM manipulation and the basics of how operators in JavaScript work.',
+                  'https://github.com/SethTobias/TimeConverter',
+                  'https://jovial-biscuit-82d853.netlify.app'
+                )
               "
               src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/time-converter.png"
               alt=""
@@ -70,7 +77,12 @@
           <div class="project two">
             <img
               @click="
-                openModal('Project 2', 'This is the description for project 2.')
+                openModal(
+                  'Momentum Motors',
+                  'This was the very first project I completed while working with another developer. The project highlighted the importance of effective communication. We were also tasked for the first time to work with a database through the use of MySQL and the use of Node.js in order to effectively communicate with the database.',
+                  'https://github.com/SethTobias/Node_Eomp',
+                  'https://node-js-562d4.web.app/'
+                )
               "
               src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/momentum-motors.png"
               alt=""
@@ -79,7 +91,12 @@
           <div class="project three">
             <img
               @click="
-                openModal('Project 3', 'This is the description for project 3.')
+                openModal(
+                  'Literaty Connect',
+                  'Through this project I completed my first Full-stack application/website. I completed a social media website where I implemented the basic functionality as seen in many other social media platforms.',
+                  'https://github.com/SethTobias/Literary_Connect',
+                  'https://literary-connect.web.app/'
+                )
               "
               src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/literary-connect.png"
               alt=""
@@ -99,9 +116,9 @@
         </div>
         <div class="item one">
           <div class="time-text">
-            <h3>Placename</h3>
+            <h3>LC Studio</h3>
             <p>
-              After finishing a six-month Full-stack Web Development course, I
+              After finishing a six-month Full-stack Web Development bootcamp, I
               gained expertise in both front-end and back-end development. Now,
               as an Intern at LC Studios, I'm applying these skills
               professionally, refining them further and contributing to
@@ -109,13 +126,13 @@
             </p>
           </div>
           <div class="time-line">
-            <p>DD/MM/YYYY</p>
+            <p>2024/04/01</p>
             <i class="fa-solid fa-code-fork"></i>
             <div></div>
           </div>
           <div class="time-img">
             <img
-              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/lc_studio.png"
               alt=""
             />
           </div>
@@ -132,23 +149,24 @@
         </div>
         <div class="item one">
           <div class="time-text">
-            <h3>Placename</h3>
+            <h3>Life Choices Academy</h3>
             <p>
-              After finishing a six-month Full-stack Web Development course, I
-              gained expertise in both front-end and back-end development. Now,
-              as an Intern at LC Studios, I'm applying these skills
-              professionally, refining them further and contributing to
-              impactful projects under mentorship.
+              During an intensive six-month Full-Stack Web Development Course at
+              Life Choices Academy, I gained proficiency in foundational tools
+              like Figma, HTML, CSS, and JavaScript in the first three months.
+              The course then advanced to cover SQL, Vue.js, and Node.js,
+              providing me with a comprehensive skill set and adaptability for
+              industry demands as a Web Developer.
             </p>
           </div>
           <div class="time-line">
-            <p>DD/MM/YYYY</p>
+            <p>2024/03/29</p>
             <i class="fa-solid fa-laptop-code"></i>
             <div></div>
           </div>
           <div class="time-img">
             <img
-              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/life_choices_academy_logo.png"
               alt=""
             />
           </div>
@@ -156,23 +174,24 @@
 
         <div class="item two">
           <div class="time-text">
-            <h3>Placename</h3>
+            <h3>Table View Highschool</h3>
             <p>
-              After finishing a six-month Full-stack Web Development course, I
-              gained expertise in both front-end and back-end development. Now,
-              as an Intern at LC Studios, I'm applying these skills
-              professionally, refining them further and contributing to
-              impactful projects under mentorship.
+              I attended Table View High School for 5 years, completing my NSC
+              qualification with a Bachelor's Pass. My subjects included English
+              HL, Afrikaans FAL, Mathematics, Life Orientation, Computer
+              Applications Technology, Physical Sciences, and Life Sciences.
+              Notably, I achieved distinctions in Computer Applications
+              Technology (82%) and Life Sciences (80%).
             </p>
           </div>
           <div class="time-line">
-            <p>DD/MM/YYYY</p>
+            <p>2024/10/30</p>
             <i class="fa-solid fa-book-bookmark"></i>
             <div></div>
           </div>
           <div class="time-img">
             <img
-              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ST.png"
+              src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/tvhs_logo.png"
               alt=""
             />
           </div>
@@ -190,19 +209,24 @@
         <div class="downloads">
           <div class="ditem 1">
             <div class="containinfo">
-              <h3 class="main info">Fullstack Web Development Certificate</h3>
+              <h3 class="main info">Curriculum Vitae</h3>
               <p class="sub info">
-                Certificate of completion of 6 month long Fullstack web dev
-                bootcamp.
+                My most recent and up to date copy of my Curriculum Vitae
               </p>
             </div>
             <div class="divider"></div>
             <div class="download">
-              <a href="" download class="btn">Download</a>
+              <a
+                href="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/seth_tobias_cv.pdf"
+                download
+                class="btn"
+                target="blank"
+                >Download</a
+              >
             </div>
           </div>
           <div class="ditem 2">
-            <div class="info">
+            <div class="containinfo">
               <h3 class="main info">Fullstack Web Development Certificate</h3>
               <p class="sub info">
                 Certificate of completion of 6 month long Fullstack web dev
@@ -211,7 +235,29 @@
             </div>
             <div class="divider"></div>
             <div class="download">
-              <a href="" download class="btn">Download</a>
+              <a
+                href="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/lc_academy_certificate_st.png"
+                download
+                class="btn"
+                target="blank"
+                >Download</a
+              >
+            </div>
+          </div>
+          <div class="ditem 3">
+            <div class="info">
+              <h3 class="main info">National Senior Certificate</h3>
+              <p class="sub info">National Senior Certificate.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="download">
+              <a
+                href="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/nsc_st.png"
+                download
+                class="btn"
+                target="blank"
+                >Download</a
+              >
             </div>
           </div>
         </div>
@@ -238,8 +284,8 @@
           </div>
 
           <div class="skill end">
-            <p class="sback">01</p>
-            <h3 class="shead">HTML</h3>
+            <p class="sback">02</p>
+            <h3 class="shead">CSS</h3>
             <p class="sbody">
               I've got seven months of HTML experience and I'm eager to level up
               my skills by diving into advanced techniques and integrating HTML
@@ -247,8 +293,8 @@
             </p>
           </div>
           <div class="skill start">
-            <p class="sback">01</p>
-            <h3 class="shead">HTML</h3>
+            <p class="sback">03</p>
+            <h3 class="shead">Bootstrap</h3>
             <p class="sbody">
               I've got seven months of HTML experience and I'm eager to level up
               my skills by diving into advanced techniques and integrating HTML
@@ -256,8 +302,8 @@
             </p>
           </div>
           <div class="skill end">
-            <p class="sback">01</p>
-            <h3 class="shead">HTML</h3>
+            <p class="sback">04</p>
+            <h3 class="shead">JavaScript</h3>
             <p class="sbody">
               I've got seven months of HTML experience and I'm eager to level up
               my skills by diving into advanced techniques and integrating HTML
@@ -265,8 +311,8 @@
             </p>
           </div>
           <div class="skill start">
-            <p class="sback">01</p>
-            <h3 class="shead">HTML</h3>
+            <p class="sback">05</p>
+            <h3 class="shead">Vue.js</h3>
             <p class="sbody">
               I've got seven months of HTML experience and I'm eager to level up
               my skills by diving into advanced techniques and integrating HTML
@@ -274,8 +320,62 @@
             </p>
           </div>
           <div class="skill end">
-            <p class="sback">01</p>
-            <h3 class="shead">HTML</h3>
+            <p class="sback">06</p>
+            <h3 class="shead">Node.js</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill start">
+            <p class="sback">07</p>
+            <h3 class="shead">MySQL</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">08</p>
+            <h3 class="shead">GitHub</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill start">
+            <p class="sback">09</p>
+            <h3 class="shead">Docker</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">10</p>
+            <h3 class="shead">Wordpress</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill start">
+            <p class="sback">11</p>
+            <h3 class="shead">Drupal</h3>
+            <p class="sbody">
+              I've got seven months of HTML experience and I'm eager to level up
+              my skills by diving into advanced techniques and integrating HTML
+              with other web technologies.
+            </p>
+          </div>
+          <div class="skill end">
+            <p class="sback">12</p>
+            <h3 class="shead">jQuery</h3>
             <p class="sbody">
               I've got seven months of HTML experience and I'm eager to level up
               my skills by diving into advanced techniques and integrating HTML
@@ -295,19 +395,155 @@
         </div>
         <div class="certificate grid">
           <img
-            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/SCRUM.png"
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/APIs.png"
             alt=""
             class="certificate img end"
           />
           <div class="certificate info end">
-            <h3>Scrum</h3>
+            <h3>API</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Drupal.png"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>Drupal</h3>
             <p>
               During my tenure at LC Studios, we underwent comprehensive
               training on the Scrum methodology, utilizing the Agile framework
               to meticulously craft a project proposal for a prospective
               e-commerce platform tailored to client specifications.
             </p>
-            <a href="" class="btn"> Learn More </a>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/hubspot_certificate.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>SEO Principles</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/seth-tobias_semrush_certification.jpg"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>SEO</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/docker-essentials-a-developer-introduction.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>Docker</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/docker_certificate.jpg"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>Docker</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/python_certificate.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>Python</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Figma.png"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>Figma</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/devops_certificate.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>DevOps</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
           </div>
         </div>
         <div class="certificate grid">
@@ -324,7 +560,41 @@
               to meticulously craft a project proposal for a prospective
               e-commerce platform tailored to client specifications.
             </p>
-            <a href="" class="btn"> Learn More </a>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/ui_certificate.png"
+            alt=""
+            class="certificate img end"
+          />
+          <div class="certificate info end">
+            <h3>UI/UX</h3>
+            <p>
+              During my time at LC Studios, we underwent comprehensive training
+              on the Scrum methodology, utilizing the Agile framework to
+              meticulously craft a project proposal for a prospective e-commerce
+              platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
+          </div>
+        </div>
+        <div class="certificate grid">
+          <img
+            src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/git_certificate.png"
+            alt=""
+            class="certificate img start"
+          />
+          <div class="certificate info start">
+            <h3>Git & GitHub</h3>
+            <p>
+              During my tenure at LC Studios, we underwent comprehensive
+              training on the Scrum methodology, utilizing the Agile framework
+              to meticulously craft a project proposal for a prospective
+              e-commerce platform tailored to client specifications.
+            </p>
+            <!-- <a href="" class="btn"> Learn More </a> -->
           </div>
         </div>
       </div>
@@ -348,7 +618,10 @@
             <div class="card1 testimonial-card">
               <div class="card1 container-grid">
                 <div class="card1 img-container">
-                  <img src="https://i.ibb.co/5Bhw7Nw/Ty-Headshot.jpg" alt="" />
+                  <img
+                    src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Ty_Headshot.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="card1 description">
                   <div class="card1 description-collapsed">
@@ -356,7 +629,15 @@
                       <p>Tyheisha Johnson</p>
                     </div>
                     <div class="card1 description-collapsed-content">
-                      <p>Colleague</p>
+                      <p>
+                        <a href="https://vue-tj-portfolio.web.app/"
+                          >Portfolio</a
+                        >
+                        |
+                        <a href="https://www.linkedin.com/in/tyhieshajohnson/"
+                          >Linkedin</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="card1 description-expanded">
@@ -375,7 +656,10 @@
             <div class="card2 testimonial-card">
               <div class="card2 container-grid">
                 <div class="card2 img-container">
-                  <img src="https://i.ibb.co/KKWZB9V/veronique.jpg" alt="" />
+                  <img
+                    src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Veronique_Headshot.jpg"
+                    alt=""
+                  />
                 </div>
                 <div class="card2 description">
                   <div class="card2 description-collapsed">
@@ -383,7 +667,17 @@
                       <p>Veronique Nappie</p>
                     </div>
                     <div class="card2 description-collapsed-content">
-                      <p>Colleague</p>
+                      <p>
+                        <a
+                          href="https://veroniquex1.github.io/vnappiePortfolio/"
+                          >Portfolio</a
+                        >
+                        |
+                        <a
+                          href="https://www.linkedin.com/in/veronique-nappie-x1/"
+                          >Linkedin</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="card2 description-expanded">
@@ -404,7 +698,7 @@
               <div class="card3 container-grid">
                 <div class="card3 img-container">
                   <img
-                    src="https://i.ibb.co/k3bpgZH/Zubaidah-Headshot.jpg"
+                    src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Zubaidah_Headshot.jpg"
                     alt=""
                   />
                 </div>
@@ -414,7 +708,14 @@
                       <p>Zubaidah Isaacs</p>
                     </div>
                     <div class="card3 description-collapsed-content">
-                      <p>Colleague</p>
+                      <p>
+                        <a href="https://zubaidah-isaacs.web.app/">Portfolio</a>
+                        |
+                        <a
+                          href="https://www.linkedin.com/in/zubaidah-isaacs-1b8070281/"
+                          >Linkedin</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="card3 description-expanded">
@@ -434,7 +735,7 @@
               <div class="card4 container-grid">
                 <div class="card4 img-container">
                   <img
-                    src="https://i.ibb.co/gJCqRH6/Ntokozo-Headshot.jpg"
+                    src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Ntokozo_Headshot.jpg"
                     alt=""
                   />
                 </div>
@@ -444,7 +745,15 @@
                       <p>Ntokozo Sithebe</p>
                     </div>
                     <div class="card4 description-collapsed-content">
-                      <p>Colleague</p>
+                      <p>
+                        <a href="https://ntoky28.wixstudio.io/myportfolio"
+                          >Portfolio</a
+                        >
+                        |
+                        <a href="https://www.linkedin.com/in/ntokozo-sithebe-/"
+                          >Linkedin</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="card4 description-expanded">
@@ -463,7 +772,7 @@
               <div class="card5 container-grid">
                 <div class="card5 img-container">
                   <img
-                    src="https://i.ibb.co/Ny7VbgH/Naeema-Headshot.jpg"
+                    src="https://sethtobias.github.io/imgGallery/Projects/VuePortfolio/Naeema_Headshot.jpg"
                     alt=""
                   />
                 </div>
@@ -474,7 +783,16 @@
                       <p>Naeema Omar</p>
                     </div>
                     <div class="card5 description-collapsed-content">
-                      <p>Colleague</p>
+                      <p>
+                        <a href="https://the-portfolio-d6cd8.web.app/"
+                          >Portfolio</a
+                        >
+                        |
+                        <a
+                          href="https://www.linkedin.com/in/naeema-omar-7ab486299/"
+                          >Linkedin</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="card5 description-expanded">
@@ -542,10 +860,10 @@
             <p>Avaliable @ 08:00 am - 5:30 pm, Monday to Sunday.</p>
           </div>
           <form action="">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Exammple@EmailAddress.com" />
+            <input type="text" placeholder="Phone Number" />
+            <input type="text" placeholder="Any Last Comments" />
             <button type="submit">Contact Me</button>
           </form>
         </div>
@@ -572,6 +890,8 @@ export default {
       isModalVisible: false,
       modalTitle: "",
       modalMsg: "",
+      modalGit: "",
+      modalLink: "",
     };
   },
   methods: {
@@ -601,12 +921,16 @@ export default {
     openModal(title, msg) {
       this.modalTitle = title;
       this.modalMsg = msg;
+      this.modalGit = github;
+      this.modalLink = link;
       this.isModalVisible = true;
     },
     closeModal() {
       this.isModalVisible = false;
       this.modalTitle = "";
       this.modalMsg = "";
+      this.modalGit = "";
+      this.modalLink = "";
     },
   },
 };
@@ -921,18 +1245,22 @@ li {
 
 .skills {
   margin: 0 auto;
-  margin-top: 50px;
-  /* width: 50vw; */
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  justify-content: center;
+}
+.skill.start {
+  /* height: 300px; */
+}
+.skill.end {
+  /* height: 300px; */
 }
 
 .skill {
   /* width: 25vw; */
   /* height: 38vh; */
   display: grid;
-  grid: 2.5vh 10vh 25vh / 5vw 5vw 15vw 15vw;
+  grid: 25px 100px / 5vw 5vw 15vw 15vw;
 }
 
 .sback {
@@ -943,12 +1271,12 @@ li {
 }
 
 .shead {
-  grid-area: 2/2/3/3;
+  grid-area: 1/2/2/3;
   z-index: 1;
 }
 
 .sbody {
-  grid-area: 3/2/4/5;
+  grid-area: 2/2/3/5;
 }
 
 .skill.start {
@@ -985,10 +1313,10 @@ li {
 .certificate.info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
 }
 
-.certificate.info :where(h3,p) {
+.certificate.info :where(h3, p) {
   margin: 0;
 }
 
@@ -1095,21 +1423,6 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
-/* .testimonial-items1 .container-grid:hover,
-.testimonial-items2 .container-grid:hover {
-  animation: cardExpand 1s forwards;
-} */
-
-/* @keyframes cardExpand {
-  0% {
-    grid: "img" 75% "description" 25% / 1fr;
-  }
-
-  100% {
-    grid: "img" 0% "description" 100% / 1fr;
-  }
-} */
 
 .img-container {
   grid-area: img;
@@ -1228,31 +1541,6 @@ li {
   }
 }
 
-/* .ref.grid {
-  display: grid;
-  grid: 1fr /0.2fr 5fr 0.2fr;
-  align-items: center;
-} */
-
-/* .ref.content {
-  display: grid;
-  grid: 1fr / 1fr 1fr;
-} */
-
-/* .ref.img {
- 
-} */
-
-/* .reference.img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .fa-solid.fa-caret-right {
-  justify-self: end;
-} */
-
 #contact {
 }
 
@@ -1264,6 +1552,13 @@ li {
 .details {
   display: flex;
   flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
 }
 
 #footer {
